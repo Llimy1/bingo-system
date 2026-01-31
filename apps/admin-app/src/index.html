@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>관리자 앱</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>빙고 게임 관리자</h1>
+
+    <div class="status-panel">
+        <div class="status-item">
+            <span class="label">게임 상태:</span>
+            <span id="game-status" class="status-value ready">준비</span>
+        </div>
+    </div>
+
+    <div class="controls">
+        <button id="start-button" class="btn btn-start">게임 시작</button>
+        <button id="reset-button" class="btn btn-reset">리셋</button>
+    </div>
+
+    <div class="info-panel">
+        <h3>게임 정보</h3>
+        <div class="info-grid">
+            <div class="info-item">
+                <span class="info-label">추첨된 번호 수:</span>
+                <span id="drawn-count" class="info-value">0</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">완성된 빙고:</span>
+                <span id="bingo-count" class="info-value">0</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ❗ module 절대 쓰지 마 -->
+<script src="renderer.js"></script>
+</body>
+</html>

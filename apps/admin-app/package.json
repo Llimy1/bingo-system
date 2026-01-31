@@ -1,0 +1,19 @@
+{
+  "name": "admin-app",
+  "version": "1.0.0",
+  "description": "Bingo game admin control app",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron . --dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.93.3"
+  },
+  "devDependencies": {
+    "electron": "^28.0.0"
+  }
+}

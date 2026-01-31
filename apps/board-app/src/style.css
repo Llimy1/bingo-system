@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+.status {
+    margin-bottom: 20px;
+}
+
+#status-text {
+    color: #666;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.board-container {
+    position: relative;
+    display: inline-block;
+    margin: 20px auto;
+}
+
+#lines-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.bingo-board {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 5px;
+    background: #f0f0f0;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.cell {
+    background: white;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    user-select: none;
+}
+
+.cell:hover {
+    transform: scale(1.05);
+    border-color: #11998e;
+}
+
+.cell.marked {
+    background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+    color: white;
+    border-color: #11998e;
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(17, 153, 142, 0.4);
+}
+
+.info {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.label {
+    color: #666;
+    font-size: 1em;
+}
+
+.value {
+    color: #11998e;
+    font-size: 2em;
+    font-weight: bold;
+}

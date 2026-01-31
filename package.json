@@ -1,0 +1,21 @@
+{
+  "name": "bingo-system",
+  "version": "1.0.0",
+  "description": "Bingo game system with 3 desktop apps",
+  "private": true,
+  "scripts": {
+    "install:all": "npm install && cd apps/draw-app && npm install && cd ../board-app && npm install && cd ../admin-app && npm install",
+    "dev:draw": "cd apps/draw-app && npm run dev",
+    "dev:board": "cd apps/board-app && npm run dev",
+    "dev:admin": "cd apps/admin-app && npm run dev",
+    "start:draw": "cd apps/draw-app && npm start",
+    "start:board": "cd apps/board-app && npm start",
+    "start:admin": "cd apps/admin-app && npm start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.93.3"
+  }
+}
